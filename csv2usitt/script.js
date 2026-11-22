@@ -50,6 +50,7 @@ function parse_csv (inputarr){
     q_name_col = document.getElementById("q_name").value;
 
     usittstr += "Ident 3:0\n\n\n";
+    usittstr += "!Thank you for using Jinx's CSV to USITT ASCII converter\n!May your Gels never burn, your atmospherics work the way you imagine them to, and your movers only move when you ask politely\n\n\n";
     usittstr += "!========= Start Data ==========\n\n\n\n\n";
 
 
