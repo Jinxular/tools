@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online CSV to USITT ASCII for importing lighting cue list to lighting consoles easier">
+    <meta name="keywords" content="Lighting, LX, CSV, USITT ASCII, Lighting console, excel to EOS">
+    <meta name="author" content="JINX NORVELL">
+    <title>CSV TO USITT ASCII</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="jquery.csv.js"></script>
+<script src="script.js"></script>
+<body>
+    <div id="main">
+        <h1>CSV to USITT ASCII</h1>
+
+        <div id="data_input">
+            <div id="labels">
+                <label class="label" for="q_col" style="height:4ex">Q-Number column</label>
+                <br>
+                <label class="label" for="q_name">Q-Label column</label>
+                <br>
+                <label class="label" for="data_start">Row to start Data</label>
+                <br>
+                <label class="label" for="q_time">Default Q-time</label>
+            </div>
+
+            <div id="inputs">
+                <input class="input" type="number" id="q_col" value="">
+                
+                <input class="input" type="number" id="q_name" value="">
+                
+                <input class="input" type="number" id="data_start" value="">
+                
+                <input type="number" id="q_time" value="">
+            </div>
+        </div>
+
+        <div id="file_input">
+            <input type="file" id="input"></input>
+            <button class="button" id="parse" onmousedown="readfile();" disabled>Export Data</button>
+            
+        </div>
+        <div id="file_export">
+            <a id="download">Download</a>
+        </div>
+    
+        
+        
+    </div>
+   
+    
+</body>
+
+</html>
